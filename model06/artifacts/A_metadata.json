@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
@@ -17,13 +17,7 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "bytes32",
-						"name": "key",
-						"type": "bytes32"
-					}
-				],
+				"inputs": [],
 				"name": "getName",
 				"outputs": [
 					{
@@ -75,9 +69,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"SolanaStorageAccountOnEVM/model05/usage.sol": "A"
+			"SolanaStorageAccountOnEVM/model06/usage.sol": "A"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -89,12 +83,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"SolanaStorageAccountOnEVM/model05/usage.sol": {
-			"keccak256": "0x2ba1e00a154471ccd8d9891448007ff5f0fa734ffc9ca5b442bdab2cdfc1e5c2",
+		"SolanaStorageAccountOnEVM/model06/usage.sol": {
+			"keccak256": "0xe6c4e6f014092667e1740a3463f6c30ebfe6461362c612a9b7cd936dbf5e8bcc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5099245a90e20a3fbeeb5fe4fc1ce37fffd3c3743ec34d5ad4bfcd83f91f63cc",
-				"dweb:/ipfs/QmUhQMc7vSehPRQXaCkEyXfXnYmP8NWc8mtWt2WrThH5e8"
+				"bzz-raw://994e52bac1413bfeb1cb80e660d6d664b31dfbdbbe1f62e2025a5732c2dcd5a0",
+				"dweb:/ipfs/QmYmfSExHGgZjeQ2KtYNawoBBH9b6WRDv8gtd857AZAnps"
 			]
 		}
 	},

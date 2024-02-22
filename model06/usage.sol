@@ -8,7 +8,7 @@ pragma solidity ^0.8.9;
 
 interface storager{
  function name(string memory name) external payable ;
- function get(bytes32 key) external  view  returns(bytes memory);
+ function get(string memory key) external view   returns(bytes memory);
  // function get(function(string memory name) external)external  view  returns(bytes memory); // use this in future
 }
 contract A{
@@ -20,7 +20,7 @@ contract A{
         storager(implementation).name(name);
     }
     
-    function getName(bytes32 key) public view  returns(bytes memory) { 
-      return storager(implementation).get(key);
+    function getName( ) public view  returns(bytes memory) { 
+       return storager(implementation).get("name(string)");
     }
 }

@@ -9,22 +9,24 @@ pragma solidity ^0.8.9;
 * use encode and decode to hold struct in more complex example
 * good readme And use cases like promethon
 * finish model04 with storage slot
-* create model05 sithout address mapping
 * implement all with fall back
 */
 
 contract StorageAccount{
+
     function set(bytes32 key, bytes memory value) public {
 
        StorageSlot.getBytesSlot(keccak256(abi.encodePacked(msg.sender,key))).value = value;
     }
 
     function del(bytes32 key) external {
+        
         StorageSlot.getBytesSlot(keccak256(abi.encodePacked(msg.sender,key))).value = "" ;/// see if you can delete this merkle root or not
     }
 
-    function get(bytes32 key) public view  returns(bytes memory){
-        return StorageSlot.getBytesSlot(keccak256(abi.encodePacked(msg.sender,key))).value;
+    function get(string memory key) public  view returns(bytes memory){
+       bytes32 newKey = keccak256(abi.encodePacked(key)) & hex"ffffffff000000000000000000000000";
+       return StorageSlot.getBytesSlot(keccak256(abi.encodePacked(msg.sender,newKey))).value;
     }
 
    function _fallback() internal virtual {
@@ -48,7 +50,7 @@ contract StorageAccount{
 
 }
 ///  0x626c756500000000000000000000000000000000000000000000000000000000
-/// 
+///  0xffffffff000000000000000000000000
 
 /**
  * @dev Library for reading and writing primitive types to specific storage slots.
