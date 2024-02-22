@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "key",
+						"type": "bytes32"
+					}
+				],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "name",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SolanaStorageAccountOnEVM/model05/usage.sol": "storager"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SolanaStorageAccountOnEVM/model05/usage.sol": {
+			"keccak256": "0x6e6db8bea3fadf6ee6a8e94dc0cc672dd7c00f836de000e0e32a8e9718e2e052",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f1f60b4af36f1d83cf2dfda94e828c87465f71a73d4434366871ee8ad024583a",
+				"dweb:/ipfs/QmV7B5S1pZAacWGScHZUjkrsUGGzns1EyUzXoGjLLx3i7R"
+			]
+		}
+	},
+	"version": 1
+}

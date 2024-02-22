@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "key",
+						"type": "bytes32"
+					}
+				],
+				"name": "del",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "key",
+						"type": "bytes32"
+					}
+				],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "bytes[]",
+						"name": "",
+						"type": "bytes[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "key",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes[]",
+						"name": "value",
+						"type": "bytes[]"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "not imoplemented yet",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SolanaStorageAccountOnEVM/model02/storageAccount.sol": "StorageAccount"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SolanaStorageAccountOnEVM/model02/storageAccount.sol": {
+			"keccak256": "0x179c99c01cd3829b023ea089390198c3d0f894d542ace25e9ed684df88f6c4fc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d2ade968f476c9095b190ed5b80d0c826480ef5302cb45ef1c747c0d504a210",
+				"dweb:/ipfs/QmT37WoprCqb8Vu83eNAm4NcdE2zeHkCtuFhgw7u3L9w2x"
+			]
+		}
+	},
+	"version": 1
+}

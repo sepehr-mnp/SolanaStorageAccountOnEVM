@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
-
+/// not imoplemented yet
 /*
 * add model 2 in wich the  _storageSlot is mapping(bytes32 => bytes[]) and the key is hash of address of the msg.sender and key given by the sender
 * create model 3 with public mapping
@@ -8,6 +8,7 @@ pragma solidity ^0.8.9;
 * create complex example like ERC20
 * use encode and decode to hold struct in more complex example
 * good readme And use cases like promethon
+* finish model04 with storage slot
 */
 
 contract StorageAccount{
