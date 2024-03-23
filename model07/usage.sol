@@ -134,6 +134,20 @@ library StorageSlot {
             r.slot := store.slot
         }
     }
+
+    function getMappingbytes32(
+        uint256 mappingSlot,
+        bytes32 key
+    ) internal 
+    pure
+    returns (bytes32 storage _account) {
+           assembly {
+            mstore(0, key)
+            mstore(32, mappingSlot)
+            _account.slot := keccak256(0, 64)
+        }
+        
+     }
 }
 contract A{
     address public implementation;
