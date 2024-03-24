@@ -154,4 +154,9 @@ contract A{
     constructor(address _implementation){
         implementation = _implementation;
     }
+
+    function changeImplementation(address _implementation)
+    public{
+        implementation = _implementation;
+    }
 }
