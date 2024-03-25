@@ -151,4 +151,7 @@ library StorageSlot {
 }
 contract A{
     address public implementation;
+    constructor(address _implementation){
+        implementation = _implementation;
+    }
 }
